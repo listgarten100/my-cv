@@ -1,0 +1,210 @@
+.lang {
+  position: relative;
+
+  display: block;
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    width: 80%;
+    margin-top: 80px;
+    padding: 40px 0;
+
+    background-color: #ebe8e8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 32px;
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__item-name {
+    margin-bottom: 12px;
+
+    color: $black;
+
+    font-family: $font1;
+    font-size: 22px;
+  }
+
+  &__diagram {
+    position: relative;
+
+    overflow: hidden;
+
+    height: 78px;
+
+    text-align: center;
+  }
+
+  &__img {
+    width: 78px;
+    height: 78px;
+  }
+
+  &__circle-inner {
+    fill: none;
+    stroke: #ed7d31;
+    stroke-width: 8px;
+  }
+
+  &__circle {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: big 1.5s ease-in-out;
+
+    fill: none;
+    stroke: #4472c4;
+    stroke-dasharray: 219.8;
+    stroke-linecap: round;
+    stroke-width: 8px;
+  }
+
+  &__diagram-percent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 3px;
+
+    height: 16px;
+    margin: auto;
+
+    color: #000000;
+
+    font-family: $font1;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__diagram-percent--value {
+    display: none;
+  }
+}
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .lang {
+    &__item-name {
+      font-size: 18px;
+    }
+
+
+    &__diagram-percent {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .lang {
+    &__list {
+      display: grid;
+
+      grid-column-gap: 60px;
+      grid-row-gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      &:nth-child(odd) {
+        justify-self: end;
+      }
+
+      &:nth-child(even) {
+        justify-self: start;
+      }
+    }
+
+
+    &__item-name {
+      font-size: 16px;
+    }
+
+
+    &__diagram-percent {
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .lang {
+    &__list {
+      display: grid;
+
+      grid-column-gap: 60px;
+      grid-row-gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      &:nth-child(odd) {
+        justify-self: end;
+      }
+
+      &:nth-child(even) {
+        justify-self: start;
+      }
+    }
+
+
+    &__item-name {
+      font-size: 18px;
+    }
+
+
+    &__diagram-percent {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 499px) {
+  .lang {
+    &__list {
+      display: grid;
+
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      &:nth-child(odd) {
+        justify-self: end;
+      }
+
+      &:nth-child(even) {
+        justify-self: start;
+      }
+    }
+
+
+    &__item-name {
+      font-size: 18px;
+    }
+
+
+    &__diagram-percent {
+      font-size: 16px;
+    }
+  }
+}

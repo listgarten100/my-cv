@@ -1,0 +1,98 @@
+.title {
+  position: absolute;
+  top: 100px;
+  left: 58px;
+
+  display: grid;
+
+  grid-gap: 26px;
+
+
+  &__greeting {
+    // font-family: $font2;
+    //    font-weight: 700;
+    color: #ffffff;
+
+    font-family: "Marck Script", sans-serif;
+    font-size: 56px;
+    //    font-style: italic;
+  }
+
+  &__name {
+    letter-spacing: 10px;
+    // font-style: italic;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    font-family: $font1;
+    font-size: 74px;
+    font-weight: 700;
+  }
+
+  &__name--black {
+    color: #000000;
+  }
+
+  &__desc {
+    letter-spacing: 11px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    font-family: $font1;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  &__desc--black {
+    color: #000000;
+  }
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .title {
+    display: none;
+
+
+    // display: none;
+    //    width: 220px;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .title {
+    display: none;
+
+
+    // display: none;
+    //    width: 220px;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .title {
+    display: none;
+
+
+    // display: none;
+    //    width: 220px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 499px) {
+  .title {
+    display: none;
+
+
+    // display: none;
+    //    width: 220px;
+  }
+}

@@ -1,0 +1,488 @@
+.header {
+  position: relative;
+
+  display: block;
+
+  &__inner {
+    display: grid;
+
+    grid-gap: 36px;
+  }
+}
+
+.title--resp {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.download {
+  display: grid;
+
+  margin-right: 30px;
+
+  grid-template-columns: 0.25fr 1fr;
+  justify-self: end;
+
+
+  &__stick {
+    width: 4px;
+    height: 330px;
+
+    background-color: $brown;
+  }
+
+  &__link {
+    align-self: end;
+
+    padding: 20px;
+
+    transition: all 0.2s ease-out;
+
+    color: #ffffff;
+    border: none;
+    background-color: $brown;
+
+    font-family: $font1;
+    font-size: 20px;
+    font-weight: 700;
+
+
+    &:hover {
+      transition: all 0.2s ease-out;
+
+      opacity: 0.7;
+    }
+  }
+}
+
+
+.menu {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 4px solid $brown;
+  background-color: #ededed;
+
+
+  &__list {
+    display: flex;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__item {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    padding: 10px;
+
+    color: $black;
+
+    font-family: $font1;
+    font-size: 20px;
+    font-weight: 600;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $brown;
+    }
+  }
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .header {
+    &__inner {
+      grid-column-gap: 0;
+      grid-template-columns: 1fr 170px;
+    }
+  }
+  .title--resp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title--resp .title__greeting {
+    align-self: end;
+
+    text-align: center;
+
+    color: #000000;
+
+    font-size: 46px;
+  }
+
+  .title--resp .title__name {
+    text-align: center;
+    letter-spacing: 4px;
+
+    color: #000000;
+
+    font-size: 32px;
+  }
+
+  .title--resp .title__desc {
+    align-self: start;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #000000;
+
+    font-size: 24px;
+  }
+
+  .download {
+    margin-right: 12px;
+
+    &__link {
+      padding: 12px;
+
+      font-size: 16px;
+    }
+  }
+
+  .menu {
+    grid-column: span 2;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .header {
+    &__inner {
+      grid-column-gap: 0;
+    }
+  }
+  .title--resp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title--resp .title__greeting {
+    align-self: end;
+
+    text-align: center;
+
+    color: #000000;
+
+    font-size: 32px;
+  }
+
+  .title--resp .title__name {
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: #000000;
+
+    font-size: 26px;
+  }
+
+  .title--resp .title__desc {
+    align-self: start;
+
+    text-align: center;
+    letter-spacing: 3px;
+
+    color: #000000;
+
+    font-size: 22px;
+  }
+
+  .download {
+    margin-right: 12px;
+
+    &__link {
+      padding: 10px;
+
+      font-size: 10px;
+    }
+  }
+
+  .menu {
+    grid-column: span 2;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .header {
+    &__inner {
+      grid-column-gap: 0;
+    }
+  }
+  .title--resp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 0 0 40px;
+  }
+
+  .title--resp .title__greeting {
+    align-self: end;
+
+    text-align: center;
+
+    color: #000000;
+
+    font-size: 32px;
+  }
+
+  .title--resp .title__name {
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: #000000;
+
+    font-size: 30px;
+  }
+
+  .title--resp .title__desc {
+    align-self: start;
+
+    text-align: center;
+    letter-spacing: 3px;
+
+    color: #000000;
+
+    font-size: 22px;
+  }
+
+  .download {
+    margin-right: 12px;
+
+    &__link {
+      padding: 12px;
+
+      font-size: 12px;
+    }
+  }
+
+  .menu {
+    grid-column: span 2;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      font-size: 13px;
+    }
+  }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 499px) {
+  .header {
+    &__inner {
+      padding-top: 70px;
+      padding-bottom: 30px;
+    }
+  }
+  .title--resp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-gap: 24px;
+  }
+
+  .title--resp .title__greeting {
+    align-self: end;
+
+    margin-right: 18px;
+
+    text-align: center;
+
+    color: #000000;
+
+    font-size: 30px;
+  }
+
+  .title--resp .title__name {
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: #000000;
+
+    font-size: 22px;
+  }
+
+  .title--resp .title__desc {
+    align-self: start;
+
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: #000000;
+
+    font-size: 14px;
+  }
+
+  .download {
+    display: block;
+
+    margin-right: 12px;
+
+    &__stick {
+      display: none;
+    }
+    &__link {
+      padding: 7px;
+
+      text-align: center;
+
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  .burger {
+    position: absolute;
+    top: 16%;
+    right: 6%;
+
+    display: block;
+
+    width: 30px;
+    height: 20px;
+
+    &::before {
+      position: absolute;
+      right: 0;
+
+      width: 100%;
+      height: 2px;
+
+      content: "";
+
+      background-color: #000000;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+
+      width: 100%;
+      height: 2px;
+
+      content: "";
+
+      background-color: #000000;
+    }
+  }
+
+  .burger span {
+    position: absolute;
+    top: 9px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  .burger.active::after {
+    top: 50%;
+
+    content: "";
+    transform: rotate(45deg);
+  }
+  .burger.active::before {
+    top: 50%;
+
+    content: "";
+    transform: rotate(-45deg);
+  }
+  .active span {
+    display: none;
+  }
+
+
+  .menu {
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    right: 10px;
+
+    display: none;
+
+    border: none;
+    background: none;
+
+    &__list {
+      display: grid;
+
+      background-color: $brown;
+
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      display: grid;
+
+      width: 100%;
+
+      &:not(:last-child) {
+        margin: 0;
+      }
+    }
+
+    &__link {
+      display: block;
+
+      padding: 15px 20px 20px 15px;
+
+      color: #ffffff;
+
+      font-size: 18px;
+    }
+  }
+
+  .menu.active {
+    display: block;
+  }
+}
