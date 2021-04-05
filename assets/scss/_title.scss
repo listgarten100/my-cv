@@ -1,0 +1,53 @@
+@use "variables" as *;
+
+.title {
+  position: absolute;
+  top: 100px;
+  left: 58px;
+
+  display: grid;
+
+  grid-gap: 26px;
+
+  &__greeting {
+    color: #ffffff;
+
+    font-family: "Marck Script", sans-serif;
+    font-size: 56px;
+  }
+
+  &__name {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: $font1;
+    font-size: 74px;
+    font-weight: 700;
+  }
+
+  &__name--black {
+    color: #000000;
+  }
+
+  &__desc {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    font-family: $font1;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  &__desc--black {
+    color: #000000;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1279px) {
+  .title {
+    display: none;
+  }
+}
