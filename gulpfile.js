@@ -94,7 +94,7 @@ function uglifyES6() {
 
 
 function buildJS() {
-  return src(PATH.jsFolder + '/**/*.min.js').pipe(dest(PATH.buildFolder + '/js'))
+  return src(PATH.jsFolder + '/**/*.js').pipe(dest(PATH.buildFolder + '/js'))
 }
 
 function buildHTML() {
