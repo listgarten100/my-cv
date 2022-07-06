@@ -1180,7 +1180,7 @@ body {
             justify-content: start;
     margin: 0;
   }
-  .work__item:nth-child(2n+1) {
+  .work__item:nth-child(2) {
     margin: 0;
   }
   .work__decor--resp {
@@ -1191,18 +1191,18 @@ body {
   .work__decor--main {
     display: none;
   }
-  .work__decor-horizStick {
+  .work__decor-horizstick {
     width: 16px;
   }
-  .work__decor-vertStick {
+  .work__decor-vertstick {
     width: 16px;
     height: 195px;
     margin-right: 15px;
   }
-  .work__decor-vertStick--white {
+  .work__decor-vertstick--white {
     margin: 0;
   }
-  .work__decor-vertStick--sm {
+  .work__decor-vertstick--sm {
     height: 132px;
   }
   .work__date {
@@ -1520,7 +1520,7 @@ body {
             justify-content: start;
     margin: 0;
   }
-  .work__item:nth-child(2n+1) {
+  .work__item:nth-child(2) {
     margin: 0;
   }
   .work__decor--resp {
@@ -1531,13 +1531,13 @@ body {
   .work__decor--main {
     display: none;
   }
-  .work__decor-vertStick {
+  .work__decor-vertstick {
     margin-right: 15px;
   }
-  .work__decor-vertStick--white {
+  .work__decor-vertstick--white {
     margin: 0;
   }
-  .work__decor-vertStick--sm {
+  .work__decor-vertstick--sm {
     height: 120px;
   }
   .work__date {
@@ -1790,7 +1790,7 @@ body {
             justify-content: start;
     margin: 0;
   }
-  .work__item:nth-child(2n+1) {
+  .work__item:nth-child(2) {
     margin: 0;
   }
   .work__decor--resp {
@@ -1801,13 +1801,13 @@ body {
   .work__decor--main {
     display: none;
   }
-  .work__decor-vertStick {
+  .work__decor-vertstick {
     margin-right: 15px;
   }
-  .work__decor-vertStick--white {
+  .work__decor-vertstick--white {
     margin: 0;
   }
-  .work__decor-vertStick--sm {
+  .work__decor-vertstick--sm {
     height: 120px;
   }
   .work__date {
@@ -2035,7 +2035,7 @@ body {
   .work__item {
     margin: 0;
   }
-  .work__item:nth-child(2n+1) {
+  .work__item:nth-child(2) {
     margin: 0;
   }
   .work__decor--resp {
@@ -2046,13 +2046,13 @@ body {
   .work__decor--main {
     display: none;
   }
-  .work__decor-vertStick {
+  .work__decor-vertstick {
     margin-right: 15px;
   }
-  .work__decor-vertStick--white {
+  .work__decor-vertstick--white {
     margin: 0;
   }
-  .work__decor-vertStick--sm {
+  .work__decor-vertstick--sm {
     height: 120px;
   }
   .work__date {

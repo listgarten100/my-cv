@@ -1,5 +1,5 @@
 const {task, src, dest, watch, series, parallel} = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync');
 const cssnano = require('cssnano');
 const rename = require('gulp-rename');
@@ -31,7 +31,7 @@ const PATH = {
   jsBundleName: 'all.js',
   htmlFiles: './*.html',
   buildFolder: 'dest'
-  }
+}
 
 const plugins = [
   autoprefixer({overrideBrowserslist: ['> 0.5%', 'last 5 versions']}),
@@ -94,7 +94,7 @@ function uglifyES6() {
 
 
 function buildJS() {
-  return src(PATH.jsFolder + '/**/*.js').pipe(dest(PATH.buildFolder + '/js'))
+  return src(PATH.jsFolder + '/**/*.min.js').pipe(dest(PATH.buildFolder + '/js'))
 }
 
 function buildHTML() {
