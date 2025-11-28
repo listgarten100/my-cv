@@ -72,9 +72,19 @@
   &__desc-company {
     color: $black;
 
+    display: block;
     font-family: $font2;
     font-size: 18px;
     font-weight: 700;
+
+    &.underline {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   &__desc-duties {
